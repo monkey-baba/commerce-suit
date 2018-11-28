@@ -4,3 +4,6 @@
 [submodule "commerce-cloud/commerce-base"]
 	path = commerce-cloud/commerce-base
 	url = https://github.com/monkey-baba/commerce-base.git
+[submodule "commerce-cloud/commerce-extra"]
+	path = commerce-cloud/commerce-extra
+	url = https://github.com/monkey-baba/commerce-extra.git
