@@ -1,9 +1,6 @@
 [submodule "commerce-front"]
 	path = commerce-front
 	url = https://github.com/monkey-baba/commerce-front.git
-[submodule "commerce-cloud/commerce-base"]
-	path = commerce-cloud/commerce-base
-	url = https://github.com/monkey-baba/commerce-base.git
 [submodule "commerce-cloud/commerce-extra"]
 	path = commerce-cloud/commerce-extra
 	url = https://github.com/monkey-baba/commerce-extra.git
@@ -16,3 +13,6 @@
 [submodule "commerce-cloud/commerce-getway"]
 	path = commerce-cloud/commerce-getway
 	url = https://github.com/monkey-baba/commerce-getway.git
+[submodule "commerce-base"]
+	path = commerce-base
+	url = https://github.com/monkey-baba/commerce-base.git
