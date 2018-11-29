@@ -13,6 +13,3 @@
 [submodule "commerce-cloud/commerce-getway"]
 	path = commerce-cloud/commerce-getway
 	url = https://github.com/monkey-baba/commerce-getway.git
-[submodule "commerce-base"]
-	path = commerce-base
-	url = https://github.com/monkey-baba/commerce-base.git
