@@ -63,8 +63,17 @@
         <groupId>com.alibaba.boot</groupId>
         <artifactId>dubbo-spring-boot-starter</artifactId>
         <version>${spring-boot-dubbo.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>dubbo</artifactId>
+        <version>${dubbo.version}</version>
       </dependency>
       <!--Spring Cloud-->
       <dependency>
