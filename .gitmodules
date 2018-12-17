@@ -7,12 +7,6 @@
 [submodule "commerce-cloud/commerce-registry"]
 	path = commerce-cloud/commerce-registry
 	url = https://github.com/monkey-baba/commerce-registry.git
-[submodule "commerce-cloud/commerce-service"]
-	path = commerce-cloud/commerce-service
-	url = https://github.com/monkey-baba/commerce-service.git
 [submodule "commerce-cloud/commerce-getway"]
 	path = commerce-cloud/commerce-getway
 	url = https://github.com/monkey-baba/commerce-getway.git
-[submodule "commerce-cloud/commerce-base"]
-	path = commerce-cloud/commerce-base
-	url = https://github.com/monkey-baba/commerce-base.git
