@@ -23,7 +23,7 @@
     <fastjson.version>1.2.54</fastjson.version>
     <commons-lang3.version>3.8.1</commons-lang3.version>
     <spring-boot-dubbo.version>0.2.0</spring-boot-dubbo.version>
-    <mybatis-plus.version>3.0.6</mybatis-plus.version>
+    <mapper.version>2.1.1</mapper.version>
   </properties>
 
   <modules>
@@ -96,12 +96,12 @@
         <artifactId>fastjson</artifactId>
         <version>${fastjson.version}</version>
       </dependency>
-      <!-- Mybatis Plus-->
-      <dependency>
-        <groupId>com.baomidou</groupId>
-        <artifactId>mybatis-plus-boot-starter</artifactId>
-        <version>${mybatis-plus.version}</version>
-      </dependency>
+      <!-- Mybatis -->
+      <!--<dependency>-->
+        <!--<groupId>tk.mybatis</groupId>-->
+        <!--<artifactId>mapper-spring-boot-starter</artifactId>-->
+        <!--<version>${mapper.version}</version>-->
+      <!--</dependency>-->
     </dependencies>
   </dependencyManagement>
 
