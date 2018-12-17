@@ -28,7 +28,7 @@
 
   <modules>
     <module>commerce-base</module>
-    <!--<module>commerce-service</module>-->
+    <module>commerce-service</module>
     <module>commerce-getway</module>
     <!--<module>commerce-registry</module>-->
     <!--<module>commerce-extra</module>-->
