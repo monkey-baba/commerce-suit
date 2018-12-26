@@ -34,7 +34,7 @@
     <module>commerce-service</module>
     <module>commerce-getway</module>
     <!--<module>commerce-registry</module>-->
-    <!--<module>commerce-extra</module>-->
+    <module>commerce-extra</module>
   </modules>
 
 
