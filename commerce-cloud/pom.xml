@@ -19,35 +19,38 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <spring-boot.version>2.1.0.RELEASE</spring-boot.version>
     <dubbo.version>2.6.5</dubbo.version>
-    <spring-cloud.version>Finchley.SR1</spring-cloud.version>
+    <spring-cloud.version>Finchley.SR2</spring-cloud.version>
     <fastjson.version>1.2.54</fastjson.version>
     <commons-lang3.version>3.8.1</commons-lang3.version>
     <spring-boot-dubbo.version>0.2.0</spring-boot-dubbo.version>
-    <mybatis-plus.version>3.0.6</mybatis-plus.version>
+    <mapper.version>2.1.1</mapper.version>
+    <mybatis-plus.version>2.3</mybatis-plus.version>
+    <apollo-client.version>1.2.0</apollo-client.version>
+    <nacos.version>0.2.0.RELEASE</nacos.version>
   </properties>
 
   <modules>
     <module>commerce-base</module>
-    <!--<module>commerce-service</module>-->
+    <module>commerce-service</module>
     <module>commerce-getway</module>
     <!--<module>commerce-registry</module>-->
-    <!--<module>commerce-extra</module>-->
+    <module>commerce-extra</module>
   </modules>
 
 
   <!-- Define Custom Repository -->
-  <repositories>
-    <repository>
-      <id>mvn</id>
-      <url>http://mvn.yuki.xin/artifactory/libs-release/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
+  <!--<repositories>-->
+    <!--<repository>-->
+      <!--<id>mvn</id>-->
+      <!--<url>http://mvn.yuki.xin/artifactory/libs-release/</url>-->
+      <!--<releases>-->
+        <!--<enabled>true</enabled>-->
+      <!--</releases>-->
+      <!--<snapshots>-->
+        <!--<enabled>true</enabled>-->
+      <!--</snapshots>-->
+    <!--</repository>-->
+  <!--</repositories>-->
 
   <dependencyManagement>
     <dependencies>
@@ -96,64 +99,83 @@
         <artifactId>fastjson</artifactId>
         <version>${fastjson.version}</version>
       </dependency>
+      <!-- Mapper -->
+      <dependency>
+        <groupId>tk.mybatis</groupId>
+        <artifactId>mapper-spring-boot-starter</artifactId>
+        <version>${mapper.version}</version>
+      </dependency>
       <!-- Mybatis Plus-->
       <dependency>
         <groupId>com.baomidou</groupId>
         <artifactId>mybatis-plus-boot-starter</artifactId>
         <version>${mybatis-plus.version}</version>
       </dependency>
+      <!-- Apollo Client-->
+      <dependency>
+        <groupId>com.ctrip.framework.apollo</groupId>
+        <artifactId>apollo-client</artifactId>
+        <version>${apollo-client.version}</version>
+      </dependency>
+      <!-- Nacos -->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        <version>${nacos.version}</version>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 
 
   <pluginRepositories>
-    <pluginRepository>
-      <id>mvn</id>
-      <url>http://mvn.yuki.xin/artifactory/libs-release/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
+    <!--<pluginRepository>-->
+      <!--<id>mvn</id>-->
+      <!--<url>http://mvn.yuki.xin/artifactory/libs-release/</url>-->
+      <!--<releases>-->
+        <!--<enabled>true</enabled>-->
+      <!--</releases>-->
+      <!--<snapshots>-->
+        <!--<enabled>true</enabled>-->
+      <!--</snapshots>-->
+    <!--</pluginRepository>-->
   </pluginRepositories>
 
   <!-- Maven plugins -->
   <build>
     <pluginManagement>
       <plugins>
-        <plugin>
-          <groupId>org.jfrog.buildinfo</groupId>
-          <artifactId>artifactory-maven-plugin</artifactId>
-          <version>2.6.1</version>
-          <inherited>false</inherited>
-          <executions>
-            <execution>
-              <id>build-info</id>
-              <goals>
-                <goal>publish</goal>
-              </goals>
-              <configuration>
-                <publisher>
-                  <contextUrl>http://mvn.yuki.xin/artifactory</contextUrl>
-                  <username>oms-user</username>
-                  <password>oms-user</password>
-                  <repoKey>local-repo</repoKey>
-                  <snapshotRepoKey>local-repo</snapshotRepoKey>
-                  <recordAllDependencies>true</recordAllDependencies>
-                </publisher>
-              </configuration>
-            </execution>
-          </executions>
-        </plugin>
+        <!--<plugin>-->
+          <!--<groupId>org.jfrog.buildinfo</groupId>-->
+          <!--<artifactId>artifactory-maven-plugin</artifactId>-->
+          <!--<version>2.6.1</version>-->
+          <!--<inherited>false</inherited>-->
+          <!--<executions>-->
+            <!--<execution>-->
+              <!--<id>build-info</id>-->
+              <!--<goals>-->
+                <!--<goal>publish</goal>-->
+              <!--</goals>-->
+              <!--<configuration>-->
+                <!--<publisher>-->
+                  <!--<contextUrl>http://mvn.yuki.xin/artifactory</contextUrl>-->
+                  <!--<username>oms-user</username>-->
+                  <!--<password>oms-user</password>-->
+                  <!--<repoKey>local-repo</repoKey>-->
+                  <!--<snapshotRepoKey>local-repo</snapshotRepoKey>-->
+                  <!--<recordAllDependencies>true</recordAllDependencies>-->
+                <!--</publisher>-->
+              <!--</configuration>-->
+            <!--</execution>-->
+          <!--</executions>-->
+        <!--</plugin>-->
       </plugins>
     </pluginManagement>
     <plugins>
-      <plugin>
-        <groupId>org.jfrog.buildinfo</groupId>
-        <artifactId>artifactory-maven-plugin</artifactId>
-      </plugin>
+      <!--<plugin>-->
+        <!--<groupId>org.jfrog.buildinfo</groupId>-->
+        <!--<artifactId>artifactory-maven-plugin</artifactId>-->
+      <!--</plugin>-->
     </plugins>
   </build>
 
