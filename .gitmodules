@@ -16,3 +16,6 @@
 [submodule "commerce-cloud/commerce-base"]
 	path = commerce-cloud/commerce-base
 	url = https://github.com/monkey-baba/commerce-base.git
+[submodule "commerce-cloud/commerce-config"]
+	path = commerce-cloud/commerce-config
+	url = https://github.com/monkey-baba/commerce-config.git
