@@ -27,6 +27,7 @@
     <mybatis-plus.version>2.3</mybatis-plus.version>
     <apollo-client.version>1.2.0</apollo-client.version>
     <nacos.version>0.2.1.RELEASE</nacos.version>
+    <liquebase.version>3.5.5</liquebase.version>
   </properties>
 
   <modules>
@@ -129,6 +130,12 @@
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         <version>${nacos.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.liquibase</groupId>
+        <artifactId>liquibase-core</artifactId>
+        <version>${liquebase.version}</version>
       </dependency>
 
     </dependencies>
