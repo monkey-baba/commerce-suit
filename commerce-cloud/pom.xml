@@ -118,17 +118,16 @@
         <artifactId>mapper-spring-boot-starter</artifactId>
         <version>${mapper.version}</version>
       </dependency>
+      <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper-spring-boot-starter</artifactId>
+        <version>${pagehelper.version}</version>
+      </dependency>
       <!-- Mybatis Plus-->
       <dependency>
         <groupId>com.baomidou</groupId>
         <artifactId>mybatis-plus-boot-starter</artifactId>
         <version>${mybatis-plus.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.github.pagehelper</groupId>
-        <artifactId>pagehelper-spring-boot-starter</artifactId>
-        <version>${mapper.version}</version>
       </dependency>
       <!-- Apollo Client-->
       <dependency>
