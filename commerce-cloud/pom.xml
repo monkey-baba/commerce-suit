@@ -43,11 +43,15 @@
   <!--Define Custom Repository-->
   <repositories>
     <repository>
-      <id>mvn</id>
+      <id>release</id>
       <url>http://116.247.124.34:8081/artifactory/libs-release/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
+    </repository>
+    <repository>
+      <id>snapshot</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -149,16 +153,20 @@
 
 
   <pluginRepositories>
-    <pluginRepository>
-      <id>mvn</id>
-      <url>http://116.247.124.34:8081/artifactory/libs-release/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
+      <pluginRepository>
+        <id>release</id>
+        <url>http://116.247.124.34:8081/artifactory/libs-release/</url>
+        <releases>
+          <enabled>true</enabled>
+        </releases>
+      </pluginRepository>
+      <pluginRepository>
+        <id>snapshot</id>
+        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>
+      </pluginRepository>
   </pluginRepositories>
 
   <!-- Maven plugins -->
