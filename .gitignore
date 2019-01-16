@@ -3,3 +3,5 @@ commerce-cloud/.settings/org.eclipse.m2e.core.prefs
 commerce-cloud/.project
 !commerce-cloud/commerce-service/service-generator-1.0.0.jar
 **/docker/data
+*.tmp
+*.gz
