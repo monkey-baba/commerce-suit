@@ -199,7 +199,7 @@
                   <repoKey>local-repo</repoKey>
                   <snapshotRepoKey>local-repo</snapshotRepoKey>
                   <recordAllDependencies>false</recordAllDependencies>
-                  <excludePatterns>**/*-app-*</excludePatterns>
+                  <excludePatterns>**/*-app-*,**/model-generator/*,**/service-generator/*,**/commerce-zuul/*</excludePatterns>
                 </publisher>
               </configuration>
             </execution>
