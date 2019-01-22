@@ -198,7 +198,7 @@
                   <password>middle_office</password>
                   <repoKey>local-repo</repoKey>
                   <snapshotRepoKey>local-repo</snapshotRepoKey>
-                  <recordAllDependencies>false</recordAllDependencies>
+                  <recordAllDependencies>true</recordAllDependencies>
                   <excludePatterns>**/*-app-*,**/model-generator/*,**/service-generator/*,**/commerce-zuul/*</excludePatterns>
                 </publisher>
               </configuration>
