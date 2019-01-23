@@ -22,6 +22,7 @@
     <spring-cloud.version>Finchley.SR2</spring-cloud.version>
     <fastjson.version>1.2.54</fastjson.version>
     <commons-lang3.version>3.8.1</commons-lang3.version>
+    <commons-collectios4.version>4.1</commons-collectios4.version>
     <spring-boot-dubbo.version>0.2.0</spring-boot-dubbo.version>
     <mapper.version>2.1.1</mapper.version>
     <pagehelper.version>1.2.10</pagehelper.version>
@@ -152,6 +153,11 @@
         <groupId>org.liquibase</groupId>
         <artifactId>liquibase-core</artifactId>
         <version>${liquebase.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>${commons-collectios4.version}</version>
       </dependency>
 
 
