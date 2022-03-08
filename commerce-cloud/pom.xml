@@ -29,7 +29,7 @@
     <mybatis-plus.version>2.3</mybatis-plus.version>
     <apollo-client.version>1.2.0</apollo-client.version>
     <nacos.version>0.2.1.RELEASE</nacos.version>
-    <liquebase.version>3.5.5</liquebase.version>
+    <liquebase.version>4.8.0</liquebase.version>
   </properties>
 
   <modules>
